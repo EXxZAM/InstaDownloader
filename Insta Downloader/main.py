@@ -24,6 +24,7 @@ def downloadPost():
                 URL = link.replace('https://www.instagram.com/p/', '')
                 URL = URL.replace('/','')
                 L = instaloader.Instaloader()
+                L.login(USER, PASSWORD)
                 post = instaloader.Post.from_shortcode(L.context, URL)
                 L.download_post(post, target=URL)
                 messagebox.showinfo('Info', 'Download Compeleted!')
