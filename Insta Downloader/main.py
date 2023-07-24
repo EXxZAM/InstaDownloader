@@ -11,9 +11,9 @@ root.title('Instagram Downloader')
 root.geometry('400x200')
 root.resizable(0,0)
 root.config(bg='#121212')
-
-USER = ""
-PASSWORD = ""
+# در آپدیت جدید اینستاگرام، برای دانلود پست ها حتما باید با اکانت خودتون لاگین کنید
+USER = "your_account_username" #نام کاربری اکانت خودتون رو اینجا قرار بدین
+PASSWORD = "your_account_password" #پسورد اکانت خودتون رو اینجا قرار بدین
 def downloadPost():
     link = postLink_Entry.get()
     
