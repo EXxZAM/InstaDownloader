@@ -12,7 +12,8 @@ root.geometry('400x200')
 root.resizable(0,0)
 root.config(bg='#121212')
 
-
+USER = ""
+PASSWORD = ""
 def downloadPost():
     link = postLink_Entry.get()
     
